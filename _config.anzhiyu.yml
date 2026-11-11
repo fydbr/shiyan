@@ -14,7 +14,7 @@ nav:
       item:
         - name: 博客
           link: https://hexo.anheyu.com/
-          icon: /img/favicon.ico
+          icon: /shiyan/img/favicon.ico
     - title: 项目
       item:
         - name: 安知鱼图床
