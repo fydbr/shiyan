@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#100f24"/>
+      <stop offset="38%" stop-color="#221d46"/>
+      <stop offset="72%" stop-color="#3b3672"/>
+      <stop offset="100%" stop-color="#5b57a0"/>
+    </linearGradient>
+
+    <radialGradient id="glowViolet" cx="0.72" cy="0.28" r="0.62">
+      <stop offset="0%" stop-color="#8b7bff" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#6f5fe0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6f5fe0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBlue" cx="0.16" cy="0.82" r="0.60">
+      <stop offset="0%" stop-color="#6fa8f5" stop-opacity="0.42"/>
+      <stop offset="50%" stop-color="#5b7fd8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#5b7fd8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPale" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#e8e6ff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#e8e6ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7b8ff5" stop-opacity="0"/>
+      <stop offset="28%" stop-color="#9a8bf0" stop-opacity="0.34"/>
+      <stop offset="55%" stop-color="#8ea6f7" stop-opacity="0.42"/>
+      <stop offset="80%" stop-color="#8b7bff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#8b7bff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0a18" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#0b0a18" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0a18" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#base)"/>
+  <rect width="1600" height="900" fill="url(#glowViolet)"/>
+  <rect width="1600" height="900" fill="url(#glowBlue)"/>
+
+  <!-- 极光带 -->
+  <g filter="url(#soft)" opacity="0.9">
+    <ellipse cx="820" cy="360" rx="760" ry="120" fill="url(#aurora)" transform="rotate(-11 820 360)"/>
+    <ellipse cx="520" cy="250" rx="430" ry="70" fill="url(#aurora)" transform="rotate(-19 520 250)" opacity="0.7"/>
+  </g>
+
+  <!-- 地平线冷光 -->
+  <g filter="url(#soft)">
+    <ellipse cx="300" cy="880" rx="560" ry="150" fill="#6f8fe8" opacity="0.30"/>
+    <ellipse cx="1280" cy="860" rx="460" ry="130" fill="#8b7bff" opacity="0.22"/>
+  </g>
+
+  <!-- 主光晕 -->
+  <g filter="url(#soft2)">
+    <ellipse cx="1160" cy="230" rx="150" ry="150" fill="url(#glowPale)"/>
+  </g>
+
+  <!-- 星点 -->
+  <g fill="#ffffff">
+    <circle cx="118" cy="96" r="1.6" opacity="0.85"/>
+    <circle cx="203" cy="168" r="1.1" opacity="0.55"/>
+    <circle cx="164" cy="252" r="1.9" opacity="0.75"/>
+    <circle cx="297" cy="74" r="1.2" opacity="0.5"/>
+    <circle cx="356" cy="186" r="2.1" opacity="0.8"/>
+    <circle cx="429" cy="108" r="1" opacity="0.45"/>
+    <circle cx="512" cy="212" r="1.5" opacity="0.6"/>
+    <circle cx="586" cy="86" r="1.2" opacity="0.55"/>
+    <circle cx="643" cy="164" r="1.8" opacity="0.7"/>
+    <circle cx="724" cy="58" r="1.1" opacity="0.5"/>
+    <circle cx="806" cy="142" r="1.4" opacity="0.6"/>
+    <circle cx="878" cy="72" r="1" opacity="0.4"/>
+    <circle cx="948" cy="196" r="1.7" opacity="0.65"/>
+    <circle cx="1024" cy="110" r="1.2" opacity="0.5"/>
+    <circle cx="1096" cy="62" r="1.5" opacity="0.6"/>
+    <circle cx="1178" cy="128" r="1" opacity="0.45"/>
+    <circle cx="1252" cy="212" r="1.9" opacity="0.72"/>
+    <circle cx="1334" cy="92" r="1.2" opacity="0.5"/>
+    <circle cx="1412" cy="176" r="1.4" opacity="0.58"/>
+    <circle cx="1490" cy="64" r="1.1" opacity="0.45"/>
+    <circle cx="1548" cy="238" r="1.7" opacity="0.6"/>
+    <circle cx="86" cy="392" r="1.3" opacity="0.5"/>
+    <circle cx="248" cy="436" r="1.1" opacity="0.42"/>
+    <circle cx="398" cy="368" r="1.6" opacity="0.55"/>
+    <circle cx="540" cy="452" r="1" opacity="0.4"/>
+    <circle cx="702" cy="386" r="1.4" opacity="0.5"/>
+    <circle cx="862" cy="470" r="1.1" opacity="0.42"/>
+    <circle cx="1018" cy="402" r="1.5" opacity="0.5"/>
+    <circle cx="1186" cy="486" r="1" opacity="0.38"/>
+    <circle cx="1338" cy="418" r="1.3" opacity="0.46"/>
+    <circle cx="1496" cy="492" r="1.1" opacity="0.4"/>
+    <circle cx="150" cy="612" r="1.2" opacity="0.42"/>
+    <circle cx="332" cy="676" r="1" opacity="0.36"/>
+    <circle cx="516" cy="728" r="1.4" opacity="0.46"/>
+    <circle cx="726" cy="664" r="1" opacity="0.34"/>
+    <circle cx="918" cy="742" r="1.2" opacity="0.4"/>
+    <circle cx="1124" cy="688" r="1" opacity="0.36"/>
+    <circle cx="1322" cy="756" r="1.3" opacity="0.42"/>
+    <circle cx="1478" cy="672" r="1" opacity="0.34"/>
+  </g>
+
+  <!-- 大颗亮星 -->
+  <g>
+    <circle cx="1160" cy="230" r="3.2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="1160" cy="230" r="9" fill="#cfd4ff" opacity="0.20"/>
+    <circle cx="486" cy="300" r="2.6" fill="#ffffff" opacity="0.8"/>
+    <circle cx="486" cy="300" r="8" fill="#cfd4ff" opacity="0.16"/>
+  </g>
+
+  <!-- 暗角 -->
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+
+  <!-- 噪点 -->
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.055"/>
+</svg>

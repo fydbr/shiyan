@@ -1,0 +1,183 @@
+/* ===========================================================
+   Vespera · 清冷紫蓝定制层
+   面向 hexo-theme-anzhiyu，仅通过 CSS 变量与少量选择器覆盖
+   =========================================================== */
+
+/* ---------- 亮色：冷调薰衣草白 ---------- */
+:root,
+[data-theme="light"] {
+  --anzhiyu-theme: #7c6fe8;
+  --anzhiyu-theme-deep: #6355d4;
+  --anzhiyu-theme-op: #7c6fe823;
+  --anzhiyu-theme-op-deep: #7c6fe8dd;
+
+  --anzhiyu-background: #f4f3fb;
+  --global-bg: #f4f3fb;
+  --anzhiyu-card-bg: #ffffff;
+  --anzhiyu-card-border: #e6e4f7;
+  --anzhiyu-secondbg: #f1effa;
+  --anzhiyu-ahoverbg: #f3f2fc;
+  --anzhiyu-card-btn-bg: #ecebf8;
+  --anzhiyu-post-blockquote-bg: #f7f6fd;
+  --anzhiyu-post-tabs-bg: #f1effa;
+  --anzhiyu-meta-theme-color: #f4f3fb;
+
+  --anzhiyu-fontcolor: #33324a;
+  --anzhiyu-secondtext: rgba(72, 70, 104, 0.78);
+  --anzhiyu-scrollbar: rgba(124, 111, 232, 0.45);
+
+  --anzhiyu-blue: #6fa8f5;
+  --anzhiyu-blue-tint: rgba(111, 168, 245, 0.12);
+  --anzhiyu-logo-color: linear-gradient(135deg, #8b7bff 0%, #6fa8f5 100%);
+
+  --anzhiyu-border-radius: 12px;
+  --anzhiyu-radius: 12px;
+}
+
+/* ---------- 暗色：冷调深紫夜 ---------- */
+[data-theme="dark"] {
+  --anzhiyu-theme: #a79cf5;
+  --anzhiyu-theme-deep: #8878e0;
+  --anzhiyu-theme-op: #a79cf52e;
+  --anzhiyu-theme-op-deep: #a79cf5cc;
+
+  --anzhiyu-background: #141320;
+  --global-bg: #141320;
+  --anzhiyu-card-bg: #1b1a28;
+  --anzhiyu-card-border: #2a2840;
+  --anzhiyu-secondbg: #201f2e;
+  --anzhiyu-ahoverbg: #232132;
+  --anzhiyu-card-btn-bg: #262438;
+  --anzhiyu-post-blockquote-bg: #1a1927;
+  --anzhiyu-post-tabs-bg: #201f2e;
+  --anzhiyu-meta-theme-color: #141320;
+
+  --anzhiyu-fontcolor: #eae8f7;
+  --anzhiyu-secondtext: rgba(214, 210, 240, 0.75);
+  --anzhiyu-scrollbar: rgba(167, 156, 245, 0.45);
+
+  --anzhiyu-blue: #8fbcff;
+  --anzhiyu-blue-tint: rgba(143, 188, 255, 0.14);
+  --anzhiyu-maskbg: rgba(20, 19, 32, 0.6);
+  --anzhiyu-maskbgdeep: rgba(20, 19, 32, 0.85);
+  --anzhiyu-logo-color: linear-gradient(135deg, #b3a6ff 0%, #8fc4ff 100%);
+
+  --anzhiyu-border-radius: 12px;
+  --anzhiyu-radius: 12px;
+}
+
+/* ---------- 版面：内容紧接头图，页脚仍贴底 ---------- */
+#body-wrap {
+  justify-content: flex-start;
+}
+
+#blog-container {
+  flex: 1 0 auto;
+}
+
+/* ---------- 头图：贴合冷调、压暗上下缘便于阅读 ---------- */
+#page-header.full_page {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header.full_page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    120% 80% at 50% 30%,
+    rgba(124, 111, 232, 0.10) 0%,
+    rgba(16, 15, 36, 0) 60%
+  );
+}
+
+#page-header.full_page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 110px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(244, 243, 251, 0) 0%,
+    rgba(244, 243, 251, 0.85) 70%,
+    var(--anzhiyu-background) 100%
+  );
+}
+
+[data-theme="dark"] #page-header.full_page::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 19, 32, 0) 0%,
+    rgba(20, 19, 32, 0.85) 70%,
+    var(--anzhiyu-background) 100%
+  );
+}
+
+/* ---------- 站点标题：柔和冷光 + 字距 ---------- */
+#page-header.full_page #site-title,
+#page-header.full_page #site-subtitle {
+  letter-spacing: 0.14em;
+}
+
+#page-header.full_page #site-title {
+  font-weight: 600;
+  text-shadow:
+    0 2px 30px rgba(139, 123, 255, 0.55),
+    0 1px 4px rgba(16, 15, 36, 0.45);
+}
+
+#page-header.full_page #site-subtitle {
+  font-weight: 400;
+  opacity: 0.92;
+  text-shadow: 0 1px 12px rgba(16, 15, 36, 0.55);
+}
+
+/* ---------- 正文与链接：冷调细节 ---------- */
+::selection {
+  background: rgba(124, 111, 232, 0.85);
+  color: #fff;
+}
+
+#article-container a:not(.headerlink):not(.fancybox) {
+  color: var(--anzhiyu-theme);
+}
+
+#article-container a:not(.headerlink):not(.fancybox):hover {
+  color: var(--anzhiyu-blue);
+}
+
+/* 卡片圆角与悬浮冷光 */
+#recent-posts > .recent-post-item,
+.card-widget,
+#page .page-title + div {
+  border-radius: var(--anzhiyu-border-radius);
+}
+
+#recent-posts > .recent-post-item:hover {
+  box-shadow: 0 14px 36px -14px rgba(124, 111, 232, 0.45);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b7bff 0%, #6fa8f5 100%) !important;
+}
+
+/* 代码块保持冷色，避免默认暖色块 */
+#article-container figure.highlight,
+#article-container pre {
+  border-radius: 12px;
+}
+
+/* 打印时还原 */
+@media print {
+  #page-header.full_page::after,
+  #page-header.full_page::before {
+    display: none !important;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "hexo-theme-reimu",
+  "version": "1.12.6",
+  "description": "A Hakurei Reimu style Hexo theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Sketon/hexo-theme-reimu.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "blog",
+    "reimu",
+    "touhou"
+  ],
+  "author": "D-Sketon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/D-Sketon/hexo-theme-reimu/issues"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
+  "homepage": "https://github.com/D-Sketon/hexo-theme-reimu#readme",
+  "files": [
+    "_config.yml",
+    "_example",
+    "languages",
+    "layout",
+    "scripts",
+    "source"
+  ]
+}

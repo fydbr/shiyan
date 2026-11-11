@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#151432"/>
+      <stop offset="45%" stop-color="#2b2658"/>
+      <stop offset="78%" stop-color="#45407f"/>
+      <stop offset="100%" stop-color="#5a5490"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f2f0ff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#b9b0ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#b9b0ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="moon" cx="0.38" cy="0.34" r="0.72">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e6e2ff"/>
+      <stop offset="100%" stop-color="#c9c2f2"/>
+    </radialGradient>
+
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7e8ef0" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#9a8bf0" stop-opacity="0.30"/>
+      <stop offset="68%" stop-color="#8ea6f7" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#8b7bff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b3566"/>
+      <stop offset="100%" stop-color="#282349"/>
+    </linearGradient>
+
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#211d3d"/>
+      <stop offset="100%" stop-color="#141128"/>
+    </linearGradient>
+
+    <filter id="blur40" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur10" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- 月光晕 -->
+  <circle cx="590" cy="150" r="230" fill="url(#halo)"/>
+  <circle cx="590" cy="150" r="62" fill="url(#moon)"/>
+  <circle cx="590" cy="150" r="92" fill="#cfc8ff" opacity="0.10" filter="url(#blur10)"/>
+
+  <!-- 极光 -->
+  <g filter="url(#blur40)">
+    <ellipse cx="330" cy="250" rx="420" ry="58" fill="url(#aurora)" transform="rotate(-8 330 250)"/>
+  </g>
+
+  <!-- 星点 -->
+  <g fill="#ffffff">
+    <circle cx="62" cy="58" r="1.4" opacity="0.75"/>
+    <circle cx="128" cy="118" r="1" opacity="0.5"/>
+    <circle cx="196" cy="52" r="1.6" opacity="0.7"/>
+    <circle cx="252" cy="146" r="1.1" opacity="0.5"/>
+    <circle cx="318" cy="80" r="1.3" opacity="0.6"/>
+    <circle cx="386" cy="158" r="0.9" opacity="0.42"/>
+    <circle cx="442" cy="62" r="1.5" opacity="0.68"/>
+    <circle cx="508" cy="128" r="1" opacity="0.5"/>
+    <circle cx="684" cy="78" r="1.4" opacity="0.62"/>
+    <circle cx="736" cy="168" r="1.1" opacity="0.5"/>
+    <circle cx="88" cy="206" r="1.2" opacity="0.45"/>
+    <circle cx="176" cy="268" r="0.9" opacity="0.38"/>
+    <circle cx="266" cy="212" r="1.3" opacity="0.5"/>
+    <circle cx="362" cy="278" r="1" opacity="0.4"/>
+    <circle cx="470" cy="228" r="1.2" opacity="0.46"/>
+    <circle cx="566" cy="296" r="0.9" opacity="0.36"/>
+    <circle cx="668" cy="244" r="1.4" opacity="0.5"/>
+    <circle cx="744" cy="330" r="1" opacity="0.38"/>
+    <circle cx="112" cy="342" r="1.1" opacity="0.4"/>
+    <circle cx="228" cy="368" r="0.9" opacity="0.34"/>
+    <circle cx="352" cy="352" r="1.2" opacity="0.42"/>
+    <circle cx="498" cy="380" r="1" opacity="0.36"/>
+    <circle cx="636" cy="362" r="1.1" opacity="0.4"/>
+  </g>
+
+  <!-- 远山 -->
+  <path d="M0 430 L96 372 L178 408 L268 344 L360 402 L452 352 L548 410 L648 366 L740 414 L800 386 L800 600 L0 600 Z"
+        fill="url(#hillFar)" opacity="0.95"/>
+  <!-- 近山 -->
+  <path d="M0 486 L112 436 L214 478 L324 424 L438 486 L556 440 L672 492 L800 452 L800 600 L0 600 Z"
+        fill="url(#hillNear)"/>
+
+  <!-- 水面倒影微光 -->
+  <g opacity="0.14">
+    <ellipse cx="590" cy="470" rx="52" ry="6" fill="#d8d3ff"/>
+    <ellipse cx="590" cy="496" rx="34" ry="5" fill="#d8d3ff" opacity="0.7"/>
+    <ellipse cx="590" cy="518" rx="22" ry="4" fill="#d8d3ff" opacity="0.5"/>
+  </g>
+</svg>
