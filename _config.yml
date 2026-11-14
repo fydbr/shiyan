@@ -51,10 +51,6 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -105,23 +101,3 @@ deploy:
   type: git
   repo: https://github.com/fydbr/shiyan.git
   branch: gh-pages
-
-
-live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-hijiki
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: false
-  react:
-    opacity: 0.7
