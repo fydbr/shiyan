@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>你好，世界</title>
+    <link href="/shiyan/2026/10/26/hello-world/"/>
+    <url>/shiyan/2026/10/26/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>深夜写下的第一行字，往往最不像样。<br>但总要有个开始——像在林子里点一盏灯，先是微弱的一豆，然后周围的轮廓慢慢显出来。</p><h2 id="为什么写博客"><a href="#为什么写博客" class="headerlink" title="为什么写博客"></a>为什么写博客</h2><p>写字是件慢事。它逼着人把含糊的念头拆开、摊平，再按顺序摆好。<br>很多时候，写着写着才发现：原来我并不知道自己在想什么。</p><p>所以这里更像一份<strong>公开的草稿本</strong>，而不是一本正经的作品集。</p><h2 id="会放些什么"><a href="#会放些什么" class="headerlink" title="会放些什么"></a>会放些什么</h2><table><thead><tr><th>类型</th><th>说明</th></tr></thead><tbody><tr><td>技术笔记</td><td>代码、工具、踩过的坑</td></tr><tr><td>读书与杂感</td><td>从诗到程序，都是理解世界的方式</td></tr><tr><td>日常碎片</td><td>风、雨、月亮，和一些小事</td></tr></tbody></table><h2 id="一句题记"><a href="#一句题记" class="headerlink" title="一句题记"></a>一句题记</h2><blockquote><p>最终，森林会记住一切。</p></blockquote><p>愿此处的文字，也能被时间温柔地记住。</p><figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params">name: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">f&quot;你好，<span class="hljs-subst">&#123;name&#125;</span>。&quot;</span><br><br><span class="hljs-built_in">print</span>(greet(<span class="hljs-string">&quot;世界&quot;</span>))<br></code></pre></td></tr></table></figure><div class="code-wrapper"><pre><code class="hljs"></code></pre></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+      <tag>开始</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
