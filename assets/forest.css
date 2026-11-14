@@ -19,7 +19,7 @@
 /* ---------- 白纸底 ---------- */
 body {
   background-color: #fafaf8 !important;
-  background-image: url("/img/paper.jpg") !important;
+  background-image: url("../img/paper.jpg") !important;
   background-size: 512px 512px;
   background-attachment: fixed;
   color: var(--ink);
