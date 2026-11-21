@@ -2,7 +2,7 @@
 title: 一栋楼可以有很多段记忆：记忆地图原型记录
 date: 2026-11-21 15:30:00
 categories:
-  - 大肥鱼
+  - 小想法
 tags:
   - MapLibre
   - 三维地图
