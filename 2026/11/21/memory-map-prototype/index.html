@@ -24,7 +24,7 @@
 <meta property="og:description" content="一座灰白的 3D 白膜城市，点一栋楼就能写下一段记忆，写过的整栋会亮起来。这次把「一栋楼一条」拆成了「一栋楼一本册子」，也顺手补上了那些只剩底座的塔。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-11-21T07:30:00.000Z">
-<meta property="article:modified_time" content="2026-11-21T07:18:04.410Z">
+<meta property="article:modified_time" content="2026-11-22T08:59:17.232Z">
 <meta property="article:author" content="yun">
 <meta property="article:tag" content="MapLibre">
 <meta property="article:tag" content="三维地图">
@@ -209,7 +209,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3k 字
+      3.7k 字
     </span>
   
 
@@ -218,7 +218,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      25 分钟
+      31 分钟
     </span>
   
 
@@ -343,6 +343,49 @@
 <h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>做这个原型的过程，比结果有意思。它逼着我把「验证」这件事从「看一眼」换成「说清楚它应该是什么样，然后去读」。</p>
 <p>看不见画面是个限制，但也逼出了另一种诚实：每一条结论都能说出它是从哪个字段读来的。做不到的部分，就直说做不到。</p>
 <p>灯亮起来的时候我没看见，但我知道 <code>lit: true</code> 在那栋楼上。</p>
+<h2 id="后记：它停在这里了"><a href="#后记：它停在这里了" class="headerlink" title="后记：它停在这里了"></a>后记：它停在这里了</h2><p>得说清楚一件事：</p>
+<blockquote>
+<p><strong>这只是一个小想法。了解到技术和实际问题之后，我放弃了它。</strong></p>
+</blockquote>
+<h3 id="最初想做的事"><a href="#最初想做的事" class="headerlink" title="最初想做的事"></a>最初想做的事</h3><p>很朴素——<strong>每个人都能在地图上有一块自己的地方，存下一段记忆。</strong></p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>想做的事</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>路过某栋楼</td>
+<td>想起一个人，就写下来</td>
+</tr>
+<tr>
+<td>旅行途中</td>
+<td>拍的照片钉在它真正发生的位置上</td>
+</tr>
+<tr>
+<td>排两小时队吃到的面</td>
+<td>也值得被记在店门口</td>
+</tr>
+</tbody></table>
+<p>别人点开，能看见那栋楼里亮着一盏别人的灯。</p>
+<p>想着想着就觉得，这应该是个能传递温暖的东西。</p>
+<p>现在回头看，<strong>是有点乌托邦了。</strong></p>
+<h3 id="放弃的原因"><a href="#放弃的原因" class="headerlink" title="放弃的原因"></a>放弃的原因</h3><p>先是我自己。技术能力不够——这个原型能跑起来，靠的是一点点试出来，不是我知道该怎么做。真要把它做成能给人用的东西，中间隔着的距离比我想的要远得多。</p>
+<p>然后还有三个具体的困境：</p>
+<p><strong>① 地图数据本身难以获取，白膜建筑也很粗糙</strong></p>
+<p>能拿到的建筑轮廓要么缺、要么歪，挤出高度之后是一堆方块。想要那种干净、克制、有体量的白膜城市，得有人一栋一栋修过。我做不到预期的那个样子。</p>
+<p><strong>② 当前的 AI 还看不懂图片</strong></p>
+<p>用户传上来的照片，系统只能存下来，读不懂里面是什么。而那恰恰是这个想法最要紧的一环——照片几乎就是记忆本身。</p>
+<p><strong>③ 建筑数据在「有名气」的地方很密，在小地方几乎没有</strong></p>
+<p>从线上拉数据时，外滩、陆家嘴这样的地方几百栋楼；换到一个普通县城，可能只剩寥寥几条轮廓，大部分街道是空的。</p>
+<h3 id="第三条最要命"><a href="#第三条最要命" class="headerlink" title="第三条最要命"></a>第三条最要命</h3><p>我想做的是<strong>每个人</strong>都能用上的东西，但数据本身是偏向有名之处的。它天然地让城市中心比别处更亮，让被记录过的地方比没被记录过的地方更亮。</p>
+<blockquote>
+<p>一个从设计之初就不公平的地图，没法承担「每个人」这三个字。</p>
+</blockquote>
+<p>所以我停在这里了。不是做不下去，是想清楚了它不该以这个样子继续做下去。</p>
+<p>留下的这份原型，就当是把想法摊开给人看。如果哪天有人把它做成了——</p>
+<p><strong>记得别只在有名字的地方点灯。</strong></p>
 
             </div>
             <hr>
