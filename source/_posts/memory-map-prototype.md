@@ -10,6 +10,10 @@ tags:
   - 原型
   - 协作记录
 description: 一座灰白的 3D 白膜城市，点一栋楼就能写下一段记忆，写过的整栋会亮起来。这次把「一栋楼一条」拆成了「一栋楼一本册子」，也顺手补上了那些只剩底座的塔。
+index_img: /img/memory-map-cover.jpg
+banner_img: /img/memory-map-cover.jpg
+banner_img_height: 55
+banner_mask_alpha: 0.12
 ---
 
 想法很简单：把一座城市的白膜摆进浏览器，点哪栋楼，就在那栋楼里写点东西。写完保存，整栋楼从灰白变成暖色——像给地图点了一盏灯。
